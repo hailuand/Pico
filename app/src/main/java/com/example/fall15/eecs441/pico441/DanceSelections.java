@@ -1,5 +1,6 @@
 package com.example.fall15.eecs441.pico441;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -35,6 +36,7 @@ public class DanceSelections extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view,
                                     int position, long id) {
 
+                // Below is debugging purposes only
                 // ListView Clicked item index
                 int itemPosition = position;
 
@@ -43,8 +45,13 @@ public class DanceSelections extends AppCompatActivity {
 
                 // Show Alert
                 Toast.makeText(getApplicationContext(),
-                        "Position :" + itemPosition + "  ListItem : " + itemValue, Toast.LENGTH_LONG)
+                        "Position :" + itemPosition + "  ListItem : " + itemValue, Toast.LENGTH_SHORT)
                         .show();
+                // Go to dance pages
+                if(itemValue == "Chacha"){
+                    Intent intent = new Intent(DanceSelections.this, DanceChacha.class);
+                    startActivity(intent);
+                }
             }
         });
 

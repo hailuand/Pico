@@ -15,4 +15,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
+    public void letsDance(View view) {
+        Intent intent = new Intent(this, DanceSelections.class);
+        startActivity(intent);
+    }
+
 }
