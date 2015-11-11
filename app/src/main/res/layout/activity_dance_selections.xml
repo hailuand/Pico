@@ -12,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Select your dance:"
-        android:layout_alignParentTop="true"
+        android:textSize="20sp"
         android:layout_centerHorizontal="true" />
 
     <ListView
