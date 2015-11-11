@@ -1,8 +1,14 @@
 <resources>
-    <string name="app_name">Pico 441</string>
-    <string name="welcome_msg">Welcome to Pico!</string>
+    <string name="app_name">Ballroom Dance Trainer</string>
+    <string name="welcome_msg">Welcome to BDT!</string>
     <string name="tagline">Your digital dance partner.</string>
-    <string name="splash_btn">Let\'s dance!</string>
+    <string name="splash_btn">Let\'s dance</string>
     <string name="chacha">Chacha</string>
-    <string name="step_select">Select your step:</string>
+    <string name="chacha_basic">Basic step</string>
+    <string name="step_select">Select Your Step:</string>
+    <string name="tempo_btn">Increase Tempo</string>
+    <string name="chacha_time_sig">Time signature: 4/4</string>
+    <string name="audio_text">Audio On</string>
+    <color name="offwhite">#FDF5E6</color>
+    <color name="textcolor">#363636</color>
 </resources>

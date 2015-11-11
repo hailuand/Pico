@@ -19,7 +19,8 @@ public class DanceSelections extends AppCompatActivity {
         // Get list view
         final ListView danceList = (ListView) findViewById(R.id.dance_list);
         // Dances to have in ListView
-        String[] dances = new String[] {"Chacha", "Rumba", "Waltz", "Tango", "Twerk"};
+        String[] dances = new String[] {"Chacha", "Rumba", "Waltz", "Tango", "Merengue", "Foxtrot",
+        "Sambda", "Jive"};
 
         // Define a new Adapter
         // First parameter - Context
@@ -44,12 +45,14 @@ public class DanceSelections extends AppCompatActivity {
                 String itemValue = (String) danceList.getItemAtPosition(position);
 
                 // Show Alert
+                /*
                 Toast.makeText(getApplicationContext(),
                         "Position :" + itemPosition + "  ListItem : " + itemValue, Toast.LENGTH_SHORT)
                         .show();
+                        */
                 // Go to dance pages
                 if(itemValue == "Chacha"){
-                    Intent intent = new Intent(DanceSelections.this, DanceChacha.class);
+                    Intent intent = new Intent(DanceSelections.this, ChachaTypes.class);
                     startActivity(intent);
                 }
             }

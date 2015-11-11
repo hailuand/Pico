@@ -19,7 +19,7 @@
         </activity>
         <activity android:name=".DanceChacha" >
         </activity>
-        <activity android:name=".ChachaTYpes" >
+        <activity android:name=".ChachaTypes" >
         </activity>
     </application>
 
