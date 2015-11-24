@@ -20,7 +20,7 @@ public class DanceSelections extends AppCompatActivity {
         final ListView danceList = (ListView) findViewById(R.id.dance_list);
         // Dances to have in ListView
         String[] dances = new String[] {"Chacha", "Rumba", "Waltz", "Tango", "Merengue", "Foxtrot",
-        "Sambda", "Jive"};
+        "Samba", "Jive"};
 
         // Define a new Adapter
         // First parameter - Context

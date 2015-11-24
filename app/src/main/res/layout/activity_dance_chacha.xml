@@ -8,74 +8,19 @@
     android:background="@color/offwhite"
     tools:context="com.example.fall15.eecs441.pico441.DanceChacha">
 
-    <TextView
-        android:id="@+id/chacha_header"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/chacha"
-        android:textColor="@color/textcolor"
-        android:textSize="30sp"
-        android:layout_centerHorizontal="true" />
-
-    <TextView
-        android:id="@+id/time_sig"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/chacha_time_sig"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@id/chacha_header"
-        android:textColor="@color/textcolor"
-        android:textSize="25sp"/>
-
-    <TextView
-        android:id="@+id/step_type"
-        android:textStyle="italic"
-        android:layout_centerHorizontal="true"
-        android:textSize="20sp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="@color/textcolor"
-        android:layout_below="@id/time_sig"
-        android:text="@string/chacha_basic" />
-
-    <!--<Button-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:layout_below="@id/step_type"-->
-        <!--android:layout_marginTop="20dp"-->
-        <!--android:layout_centerHorizontal="true"-->
-        <!--android:text="@string/tempo_btn"-->
-        <!--android:id="@+id/button" />-->
-
     <ImageView
+        android:id="@+id/arrow_img_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/feet"
-        android:src="@drawable/feet"
-        android:layout_marginTop="40dp"
-        android:adjustViewBounds="true"
-        android:maxWidth="200dp"
-        android:maxHeight="200dp"
-        android:scaleType="fitCenter"
-        android:layout_below="@+id/step_type"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Button"
+        android:id="@+id/tempo_btn"
+        android:layout_alignBottom="@id/arrow_img_view"
         android:layout_centerHorizontal="true" />
-
-    <!--<SeekBar-->
-        <!--android:layout_width="fill_parent"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:id="@+id/seekBar"-->
-        <!--android:layout_centerHorizontal="true"-->
-        <!--android:layout_marginTop="20dp"-->
-        <!--android:layout_below="@id/feet" />-->
-
-    <!--<ToggleButton-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:layout_marginTop="20dp"-->
-        <!--android:text="Audio"-->
-        <!--android:id="@+id/toggleAudio"-->
-        <!--android:layout_below="@id/seekBar"-->
-        <!--android:layout_centerHorizontal="true" />-->
 
 
 </RelativeLayout>
