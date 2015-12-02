@@ -1,14 +1,10 @@
 <resources>
-    <string name="app_name">Ballroom Dance Trainer</string>
-    <string name="welcome_msg">Welcome to BDT!</string>
-    <string name="tagline">Your digital dance partner.</string>
+    <string name="app_name">PICO</string>
+    <string name="welcome_msg">PICO</string>
+    <string name="tagline">YOUR DIGITAL DANCE PARTNER</string>
     <string name="splash_btn">Let\'s dance</string>
     <string name="chacha">Chacha</string>
-    <string name="chacha_basic">Basic step</string>
-    <string name="step_select">Select Your Step:</string>
-    <string name="tempo_btn">Increase Tempo</string>
-    <string name="chacha_time_sig">Time signature: 4/4</string>
-    <string name="audio_text">Audio On</string>
-    <color name="offwhite">#FDF5E6</color>
+    <string name="tempo_btn">Tempo</string>
     <color name="textcolor">#363636</color>
+    <color name="btn_bg">#5e5e5e</color>
 </resources>
