@@ -3,11 +3,11 @@
     android:id="@+id/selected">
     <item
         android:drawable="@drawable/wheel0"
-        android:duration="100"/>
+        android:duration="100" />
     <item
         android:drawable="@drawable/wheel1"
-        android:duration="100"/>
+        android:duration="100" />
     <item
         android:drawable="@drawable/wheel2"
-        android:duration="100"/>
+        android:duration="100" />
 </animation-list>
