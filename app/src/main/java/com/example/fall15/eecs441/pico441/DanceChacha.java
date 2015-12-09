@@ -18,13 +18,13 @@ public class DanceChacha extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dance_chacha);
 
-        ImageView arrow_img = (ImageView) findViewById(R.id.basic_chacha_step);
+        ImageView step = (ImageView) findViewById(R.id.basic_chacha_step);
         // Place animation on screen
-        arrow_img.setBackgroundResource(R.drawable.chacha_basic_anim);
+        step.setBackgroundResource(R.drawable.chacha_basic_anim);
 
 
 
-        final AnimationDrawable frameAnimation = (AnimationDrawable) arrow_img.getBackground();
+        final AnimationDrawable frameAnimation = (AnimationDrawable) step.getBackground();
         // Start animation
         frameAnimation.start();
         // Button responsible for changing tempo
