@@ -19,7 +19,8 @@
         </activity>
         <activity android:name=".DanceSelections" >
         </activity>
-        <activity android:name=".DanceChacha" >
+        <activity android:name=".DanceChacha"
+            android:screenOrientation="landscape">
         </activity>
         <activity android:name=".ChachaTypes" >
         </activity>

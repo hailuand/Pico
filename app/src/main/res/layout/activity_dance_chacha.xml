@@ -10,9 +10,9 @@
 
     <ImageView
         android:id="@+id/basic_chacha_step"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:scaleType="fitCenter"
+        android:layout_width="1440px"
+        android:layout_height="810px"
+        android:scaleType="centerCrop"
         android:adjustViewBounds="true"
         android:layout_centerInParent="true"
         />
@@ -28,6 +28,5 @@
         android:layout_centerVertical="true"
         android:alpha="0"
         />
-
 
 </RelativeLayout>
