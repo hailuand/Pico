@@ -5,17 +5,14 @@
         android:drawable="@drawable/beat_1"
         android:duration="1000" />
     <item
-        android:drawable="@drawable/beat_1_1"
-        android:duration="1000" />
-    <item
         android:drawable="@drawable/beat_2"
         android:duration="1000" />
     <item
         android:drawable="@drawable/beat_3"
         android:duration="1000" />
     <item
-        android:drawable="@drawable/beat_4_0"
-        android:duration="1000" />
+        android:drawable="@drawable/beat_4"
+        android:duration="500" />
     <item
         android:drawable="@drawable/beat_4_5"
         android:duration="500" />
@@ -29,6 +26,10 @@
         android:drawable="@drawable/beat_7"
         android:duration="1000" />
     <item
-        android:drawable="@drawable/beat_8_0"
-        android:duration="1000" />
+        android:drawable="@drawable/beat_8"
+        android:duration="500" />
+    <item
+        android:drawable="@drawable/beat_8_5"
+        android:duration="500" />
+
 </animation-list>
