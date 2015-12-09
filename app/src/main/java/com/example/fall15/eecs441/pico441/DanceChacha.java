@@ -1,11 +1,17 @@
 package com.example.fall15.eecs441.pico441;
 
+import android.content.Context;
 import android.graphics.drawable.AnimationDrawable;
+import android.media.AudioManager;
+import android.media.MediaPlayer;
+import android.media.SoundPool;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+
+import java.io.File;
 
 public class DanceChacha extends AppCompatActivity {
 
@@ -21,6 +27,13 @@ public class DanceChacha extends AppCompatActivity {
         ImageView step = (ImageView) findViewById(R.id.basic_chacha_step);
         // Place animation on screen
         step.setBackgroundResource(R.drawable.chacha_basic_anim);
+        // Default to playing 60bpm metronome
+        AudioManager audioManager = (AudioManager) getSystemService(Context.AUDIO_SERVICE);
+        audioManager.setStreamVolume(AudioManager.STREAM_MUSIC, 20, 0);
+        MediaPlayer mp = MediaPlayer.create(this, R.raw.onetwenty);
+        mp.setLooping(true);
+        mp.start();
+        mp.release();
 
 
 

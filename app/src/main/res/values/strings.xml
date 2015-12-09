@@ -1,7 +1,7 @@
 <resources>
-    <string name="app_name">PICO</string>
-    <string name="welcome_msg">PICO</string>
-    <string name="tagline">YOUR DIGITAL DANCE PARTNER</string>
+    <string name="app_name">Ballroom Dance Trainer</string>
+    <string name="welcome_msg">Welcome to BDT</string>
+    <string name="tagline">Your Digital Dance Partner</string>
     <string name="splash_btn">Let\'s dance</string>
     <string name="chacha">Chacha</string>
     <string name="tempo_btn">Tempo</string>
