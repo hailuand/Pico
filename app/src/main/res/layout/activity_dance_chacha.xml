@@ -9,23 +9,25 @@
     tools:context="com.example.fall15.eecs441.pico441.DanceChacha">
 
     <ImageView
-        android:id="@+id/arrow_img_view"
+        android:id="@+id/basic_chacha_step"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:layout_centerInParent="true"
         />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:text="@string/tempo_btn"
         android:id="@+id/tempo_btn"
-        android:layout_margin="10dp"
-        android:paddingLeft="10dp"
-        android:paddingRight="10dp"
         android:textColor="@android:color/white"
         android:background="@color/btn_bg"
-        android:layout_alignBottom="@id/arrow_img_view"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:alpha="0"
+        />
 
 
 </RelativeLayout>

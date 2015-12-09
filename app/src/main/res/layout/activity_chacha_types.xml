@@ -12,7 +12,7 @@
         android:id="@+id/step_select_head"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="SELECT STEP"
+        android:text="SELECT YOUR STEP"
         android:textSize="20sp"
         android:textColor="@color/textcolor"
         android:layout_centerHorizontal="true"/>

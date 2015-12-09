@@ -9,14 +9,20 @@ import android.widget.ImageView;
 
 public class DanceChacha extends AppCompatActivity {
 
+    final double fourFourCount = 2.0;
+    final double halfFourCount = 0.5;
+    double currentState = 2.0;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dance_chacha);
 
-        ImageView arrow_img = (ImageView) findViewById(R.id.arrow_img_view);
+        ImageView arrow_img = (ImageView) findViewById(R.id.basic_chacha_step);
         // Place animation on screen
-        arrow_img.setBackgroundResource(R.drawable.arrow_anim_file);
+        arrow_img.setBackgroundResource(R.drawable.chacha_basic_anim);
+
+
 
         final AnimationDrawable frameAnimation = (AnimationDrawable) arrow_img.getBackground();
         // Start animation
@@ -26,26 +32,44 @@ public class DanceChacha extends AppCompatActivity {
         // When clicked, tempoButton will change animation speed and metronome beat
         tempoButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                ImageView arrow_img = (ImageView) findViewById(R.id.arrow_img_view);
-                AnimationDrawable currentAnimation = (AnimationDrawable) arrow_img.getBackground();
+                System.out.println("HI GUYS");
+                ImageView stepAnimation = (ImageView) findViewById(R.id.basic_chacha_step);
+                AnimationDrawable currentAnimation = (AnimationDrawable) stepAnimation.getBackground();
                 // Create a new animation with a modified delay factor
-                final AnimationDrawable newAnimation = setAnimationDelay(currentAnimation, 2);
+                final AnimationDrawable newAnimation;
+                if(currentState == fourFourCount) {
+                    currentState = halfFourCount;
+                    newAnimation = halfCount(currentAnimation);
+                }
+                else{
+                    currentState = fourFourCount;
+                    newAnimation = doubleCount(currentAnimation);
+                }
                 // Stop current animation and place set new animation on screen
                 currentAnimation.stop();
-                arrow_img.setBackground(newAnimation);
-
+                stepAnimation.setBackground(newAnimation);
                 newAnimation.start();
-
             }
         });
     }
-    // Modify the AnimationDrawable it's delay by a factor of delayFactor
-    private AnimationDrawable setAnimationDelay(AnimationDrawable currentAnimation, int delayFactor){
+
+    private AnimationDrawable doubleCount(AnimationDrawable currentAnimation){
         AnimationDrawable output = new AnimationDrawable();
         for(int i = 0 ; i < currentAnimation.getNumberOfFrames() ; i++)
         {
             int old_duration = currentAnimation.getDuration(i);
-            output.addFrame(currentAnimation.getFrame(i), old_duration * delayFactor);
+            output.addFrame(currentAnimation.getFrame(i), old_duration * 2);
+        }
+        output.setOneShot(false);
+        return output;
+    }
+
+    private AnimationDrawable halfCount(AnimationDrawable currentAnimation){
+        AnimationDrawable output = new AnimationDrawable();
+        for(int i = 0 ; i < currentAnimation.getNumberOfFrames() ; i++)
+        {
+            int old_duration = currentAnimation.getDuration(i);
+            output.addFrame(currentAnimation.getFrame(i), old_duration / 2);
         }
         output.setOneShot(false);
         return output;

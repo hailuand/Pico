@@ -28,6 +28,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/tagline"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
         android:layout_below="@id/welcome"
         android:layout_centerHorizontal="true" />
     
@@ -50,6 +52,7 @@
         android:id="@+id/app_icon"
         android:src="@drawable/app_icon"
         android:layout_marginBottom="20dp"
+        android:layout_marginTop="10dp"
         android:layout_centerHorizontal="true"
         android:layout_above="@id/welcome" />
 </RelativeLayout>
