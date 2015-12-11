@@ -5,22 +5,28 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    android:background="@color/offwhite"
+    android:background="#e8e8e8"
     tools:context="com.example.fall15.eecs441.pico441.DanceChacha">
 
     <ImageView
-        android:id="@+id/arrow_img_view"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/basic_chacha_step"
+        android:layout_width="1440px"
+        android:layout_height="810px"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:layout_centerInParent="true"
         />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="New Button"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/tempo_btn"
         android:id="@+id/tempo_btn"
-        android:layout_alignBottom="@id/arrow_img_view"
-        android:layout_centerHorizontal="true" />
-
+        android:textColor="@android:color/white"
+        android:background="@color/btn_bg"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:alpha="0"
+        />
 
 </RelativeLayout>
